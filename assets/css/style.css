@@ -1,0 +1,38 @@
+/* Importação da fonte moderna "Poppins" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Estilização global da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fundo com degradê linear suave em tons de azul e cinza */
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    /* Garante que o gradiente ocupe a altura total da tela */
+    min-height: 100vh; 
+    margin: 0;
+}
+
+/* Modificações visuais nos painéis (cards) do Bootstrap */
+.card {
+    border: none;
+    /* Define o tempo da animação suave para o hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ativado quando o rato passa por cima do painel */
+.card:hover {
+    /* Eleva ligeiramente o card para cima */
+    transform: translateY(-5px); 
+    /* Aumenta a intensidade da sombra para criar profundidade */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Ajuste nos inputs do formulário para combinar com os cantos arredondados */
+.form-control {
+    border-radius: 10px;
+}
+
+/* Ajuste nos botões para um aspeto mais moderno */
+.btn {
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}
